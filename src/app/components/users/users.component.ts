@@ -9,13 +9,15 @@ import {User} from '../../models/User';
 export class UsersComponent implements OnInit {
 
   users: User[]; 
+  showExtended: boolean = true; 
+  loaded: boolean = true;
 
 
 
   constructor() { }
 
   ngOnInit() {
-  	this.users = [
+		this.users = [
   		{
 			firstName: 'Jhon',
 			lastName: 'Doe',
@@ -58,8 +60,17 @@ export class UsersComponent implements OnInit {
 				city: 'cville',
 				state: 'VA'
 			}
-		})
-  }
+	})
+
+
+  }//end of ngInit()
+
+
+
+
+
+
+
 
   addUser(user: User) {
   	this.users.push(user);

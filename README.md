@@ -30,7 +30,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 Chrome extension: <i><strong> Augury</strong></i> <br> 
 - For debugging and visualizing angular applications at runtime <br>
 
-
+---
+---
 
 ## Further help
 

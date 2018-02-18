@@ -28,7 +28,10 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ### Tools Used:
 
 Chrome extension: <i><strong> Augury</strong></i> <br> 
-- For debugging and visualizing angular applications at runtime <br>
+* For debugging and visualizing angular applications at runtime <br>
+
+## Additional Dependencies added
+* `npm install bootstrap@4.0.0-beta.2 jquery popper.js` <br>
 
 ---
 ---

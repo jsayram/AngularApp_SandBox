@@ -1,4 +1,4 @@
-import  { Component } from '@angular/core';
+import  { Component, OnInit } from '@angular/core';
 import {User} from '../../models/User';
 
 @Component({
@@ -8,12 +8,16 @@ import {User} from '../../models/User';
 
 })
 
-export class UserComponent {
+export class UserComponent implements OnInit {
 	//properties 
 	user: User; 
 	//methods 
 	constructor(){
-		this.user = {
+		
+	}
+	//runs when app starts up initializes whatever you want
+	ngOnInit(){
+			this.user = {
 			firstName: 'Jhon',
 			lastName: 'Doe',
 			age: 30,
@@ -23,7 +27,6 @@ export class UserComponent {
 				state: 'MA'
 			}
 		}
-		
 	}
 }
 

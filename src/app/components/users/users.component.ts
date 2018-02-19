@@ -12,6 +12,7 @@ export class UsersComponent implements OnInit {
   showExtended: boolean = true; 
   loaded: boolean = true;
   enableAdd: boolean = true;
+  currentClasses = {};
 
 
 
@@ -22,41 +23,44 @@ export class UsersComponent implements OnInit {
   		{
 			firstName: 'Jhon',
 			lastName: 'Doe',
-			age: 30,
+			age: 45,
 			address: {
 				street: '50 main st',
 				city: 'Boston',
 				state: 'MA'
 			},
-			image: 'http://lorempixel.com/600/600/people/4'
+			image: 'http://lorempixel.com/600/600/people/4',
+			isActive: true
 		},
 		{
 			firstName: 'Kevin',
 			lastName: 'Pizza',
-			age: 34,
+			age: 70,
 			address: {
 				street: '20 School St',
 				city: 'Lynn',
 				state: 'MASS'
 			},
-			image: 'http://lorempixel.com/600/600/people/3'
+			image: 'http://lorempixel.com/600/600/people/3',
+			isActive: false
 		},
 	    {
 			firstName: 'Karen',
 			lastName: 'Williams',
-			age: 26,
+			age: 6,
 			address: {
 				street: '55 Mill St',
 				city: 'Miami',
 				state: 'FL'
 			},
-			image: 'http://lorempixel.com/600/600/people/2'
+			image: 'http://lorempixel.com/600/600/people/2',
+			isActive: true
 
 		}
 
   	];
     
- //  	this.addUser({
+    //  this.addUser({
 	// 		firstName: 'David',
 	// 		lastName: 'Jackson',
 	// 		age: 23,
@@ -68,10 +72,10 @@ export class UsersComponent implements OnInit {
 	// 		image: 'http://lorempixel.com/600/600/people/1'
 	// })
 
+	this.setCurrentClasses();
+
 
   }//end of ngInit()
-
-
 
 
 
@@ -79,8 +83,12 @@ export class UsersComponent implements OnInit {
   	this.users.push(user);
   }
 
-
-
+  setCurrentClasses(){
+  	this.currentClasses = {
+  		'btn-outline-success': this.enableAdd,
+  		'big-text': this.showExtended
+  	}
+  }
 }
 
 

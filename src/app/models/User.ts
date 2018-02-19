@@ -9,7 +9,10 @@ export interface User {
 			state?: string
 		},
 		image?: string,
-		isActive?: boolean
+		isActive?: boolean,
+		balance?: number,
+		//this is any because we want to put a date in that
+		registered?: any
 }
 
 

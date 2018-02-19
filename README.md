@@ -32,7 +32,8 @@ Chrome extension: <i><strong> Augury</strong></i> <br>
 
 ## Additional Dependencies added
 `npm install bootstrap@4.0.0-beta.2 jquery popper.js` <br>
-Note: modify .angular-cli.json to add necessary styles and script bootstrap dependencies.
+-Note: modify <i><strong>.angular-cli.json<strong></i>to add necessary styles and script bootstrap dependencies. Then you can use bootstrap classes inside your "<i>componentName</i>.component.html" files.
+	
 
 ---
 ---

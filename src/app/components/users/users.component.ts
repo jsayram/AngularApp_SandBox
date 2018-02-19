@@ -9,10 +9,11 @@ import {User} from '../../models/User';
 export class UsersComponent implements OnInit {
 
   users: User[]; 
-  showExtended: boolean = true; 
+  showExtended: boolean = false; 
   loaded: boolean = true;
   enableAdd: boolean = true;
   currentClasses = {};
+  currentStyles = {};
 
 
 
@@ -73,6 +74,7 @@ export class UsersComponent implements OnInit {
 	// })
 
 	this.setCurrentClasses();
+	this.setCurrentStyles();
 
 
   }//end of ngInit()
@@ -89,6 +91,15 @@ export class UsersComponent implements OnInit {
   		'big-text': this.showExtended
   	}
   }
+
+  setCurrentStyles(){
+  	this.currentStyles ={
+  		'padding-top':this.showExtended ? '0': '40px',
+  		'font-size': this.showExtended? '': '40px'
+  	}
+  }
+
+
 }
 
 

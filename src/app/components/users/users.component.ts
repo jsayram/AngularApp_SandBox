@@ -7,11 +7,21 @@ import {User} from '../../models/User';
   styleUrls: ['./users.component.css']
 }) 
 export class UsersComponent implements OnInit {
-
+  user: User = {
+  	firstName: '',
+  	lastName: '',
+  	age: null,
+  	address: {
+  		street: '',
+  		city: '',
+  		state: ''
+  	}
+  }
   users: User[]; 
   showExtended: boolean = true; 
   loaded: boolean = false;
-  enableAdd: boolean = true;
+  enableAdd: boolean = false;
+  showUserForm: boolean = false; 
 
   constructor() { }
 
@@ -21,11 +31,11 @@ export class UsersComponent implements OnInit {
 			firstName: 'Jhon',
 			lastName: 'Doe',
 			age: 45,
-			address: {
+			address: { 
 				street: '50 main st',
 				city: 'Boston',
 				state: 'MA'
-			},
+			}, 
 			isActive: true,
 			registered: new Date('01/02/2018 08:30:00'),
 			hide: true
@@ -64,16 +74,37 @@ export class UsersComponent implements OnInit {
 
   }//end of ngInit()
 
-
-
-  addUser(user: User) {
-  	this.users.push(user);
-  }
+  addUser() {
+  	this.user.isActive = true; 
+  	this.user.registered = new Date();
+  	this.users.unshift(this.user);
+  	this.user = {
+  		firstName: '',
+  		lastName: '',
+  		age: null,
+  		address: {
+  			street: '',
+  			city: '',
+  			state: ''
+  		}
+ 	 }
+  };
   
   // toggleHide(user: User) {
   //  	user.hide = !user.hide;
   // }
 
+  //Add new user button eventForm listener
+  onSubmit(e){
+  	console.log(123);
+  	e.preventDefault();
+  }
+
+  fireEvent(e) {
+  	console.log("fireEvent...");
+  	console.log(e.type);
+  	console.log(e.target.value);
+  }
 
 }
 

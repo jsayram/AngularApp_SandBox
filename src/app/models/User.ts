@@ -14,6 +14,6 @@ export interface User {
 		registered?: any,
 		hide?: boolean
 }
-
+  
 
 

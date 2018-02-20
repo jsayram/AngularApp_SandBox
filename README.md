@@ -27,17 +27,17 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ---
 ## Jose Ramirez Dev. Notes
 ---
-#### Tools Used:
+#### Tools & Assets:
 
 * Chrome extension: <i><strong> Augury</strong></i> <br> 
 -(For debugging and visualizing angular applications at runtime) <br>
-* Image Placeholders: lorempixel.com <br>
-* Font Awesome -- installed using npm: `npm install font-awesome` <br>
+* Image Placeholders: `lorempixel.com` <br>
+
 
 ## Additional Dependencies added
-`npm install bootstrap@4.0.0-beta.2 jquery popper.js` <br>
--Note: modify <i><strong>`.angular-cli.json`</strong></i> to add necessary styles and script bootstrap dependencies. Then you can use bootstrap classes inside your "<i>componentName</i>.component.html" files.
-	
+* Bootstrap V4: `npm install bootstrap@4.0.0-beta.2 jquery popper.js` <br>
+-Note: modify <i><strong>`.angular-cli.json`</strong></i> to add necessary styles and script bootstrap dependencies. Then you can use bootstrap classes inside your "<i>componentName</i>.component.html" files. <br>
+* Font Awesome: `npm install font-awesome` <br>	
 
 ---
 ---

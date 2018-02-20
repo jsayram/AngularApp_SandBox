@@ -35,7 +35,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 
 ## Additional Dependencies added
-* Bootstrap V4: `npm install bootstrap@4.0.0-beta.2 jquery popper.js` <br>
+* <strong>Bootstrap V4</strong> - <strong>jQuery</strong> - <strong>Popper.js</strong>: `npm install bootstrap@4.0.0-beta.2 jquery popper.js` <br>
 -Note: modify <i><strong>`.angular-cli.json`</strong></i> to add necessary styles and script bootstrap dependencies. Then you can use bootstrap classes inside your "<i>componentName</i>.component.html" files. <br>
 * Font Awesome: `npm install font-awesome` <br>	
 

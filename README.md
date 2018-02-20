@@ -25,14 +25,14 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ---
 ---
 ---
-## Jose Ramirez Dev. Notes 
-<br>
-### Tools Used:
+## Jose Ramirez Dev. Notes
+---
+#### Tools Used:
 
-Chrome extension: <i><strong> Augury</strong></i> <br> 
-* (For debugging and visualizing angular applications at runtime) <br>
-
-Image Placeholders: lorempixel.com <br>
+* Chrome extension: <i><strong> Augury</strong></i> <br> 
+-(For debugging and visualizing angular applications at runtime) <br>
+* Image Placeholders: lorempixel.com <br>
+* Font Awesome -- installed using npm: `npm install font-awesome` <br>
 
 ## Additional Dependencies added
 `npm install bootstrap@4.0.0-beta.2 jquery popper.js` <br>

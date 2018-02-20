@@ -18,7 +18,7 @@
       <input [(ngModel)]="user.email" type="text" class="form-control" name="email">
     </div>
 
-    <button (click)="addUser()" [disabled]="user.firstName === '' || user.lastName === '' " class="btn btn-light btn-block mb-3">Add New User</button>
+    <button [disabled]="user.firstName === '' || user.lastName === '' " class="btn btn-light btn-block mb-3">Add New User</button>
   </form>
 
 </div>

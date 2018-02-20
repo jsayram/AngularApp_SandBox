@@ -31,7 +31,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 * Chrome extension: <i><strong> Augury</strong></i> <br> 
 -(For debugging and visualizing angular applications at runtime) <br>
-* Image Placeholders: [www.lorempixel.com](lorempixel.com)<br>
+* Image Placeholders: [www.lorempixel.com](https://www.lorempixel.com)<br>
 
 
 ## Additional Dependencies added

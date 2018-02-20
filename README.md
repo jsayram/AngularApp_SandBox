@@ -31,14 +31,15 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 * Chrome extension: <i><strong> Augury</strong></i> <br> 
 -(For debugging and visualizing angular applications at runtime) <br>
-* Image Placeholders: [www.lorempixel.com](https://www.lorempixel.com)<br>
+* Image placeholders: [www.lorempixel.com](https://www.lorempixel.com)<br>
 
 
 ## Additional Dependencies added
 * <strong>Bootstrap V4</strong> - <strong>jQuery</strong> - <strong>Popper.js</strong>: `npm install bootstrap@4.0.0-beta.2 jquery popper.js` <br>
--Note: modify <i><strong>`.angular-cli.json`</strong></i> to add necessary styles and script bootstrap dependencies. Then you can use bootstrap classes inside your "<i>componentName</i>.component.html" files. <br>
 -A Popper is an element on the screen which "pops out" from the natural flow of your application.<br>Docs: [https://github.com/FezVrasta/popper.js](https://github.com/FezVrasta/popper.js) <br>
-* <strong>Font Awesome</strong>: `npm install font-awesome` <br>	
+* <strong>Font Awesome</strong>: `npm install font-awesome` <br>
+
+-Note for dependencies above: modify <i><strong>`.angular-cli.json`</strong></i> to add necessary styles and scripts for bootstrap and font-awesome dependencies. Then you can use inside your "<i>componentName</i>.component.html" files. <br>	
 
 ---
 ---

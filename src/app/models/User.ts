@@ -11,7 +11,8 @@ export interface User {
 		
 		isActive?: boolean,
 		//this is any because we want to put a date in that
-		registered?: any
+		registered?: any,
+		hide?: boolean
 }
 
 

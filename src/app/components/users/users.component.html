@@ -2,7 +2,7 @@
 <div class="card card-body mb-3" *ngIf="showUserForm">
   <h2>Add User</h2>
 
-  <form #userForm ="ngForm" (ngSubmit)="onSubmit(ngForm)">
+  <form #userForm ="ngForm" (ngSubmit)="onSubmit(userForm)">
     <!-- First Name Form -->
     <div class="form-group">
       <label>First Name</label>

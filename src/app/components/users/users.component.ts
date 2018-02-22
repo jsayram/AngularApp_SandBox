@@ -20,14 +20,22 @@ export class UsersComponent implements OnInit {
   enableAdd: boolean = false;
   showUserForm: boolean = false;
   @ViewChild('userForm') form: any;
+  data:any;
 
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
+  	this.dataService.getData().subscribe(data => {
+  		console.log(data);
+  	});
 	
-	this.users = this.dataService.getUsers();	
+	//due to it being asynchronous
+	this.dataService.getUsers().subscribe(users =>{
+		this.users = users;
+		this.loaded = true;
+	});	
  	
- 	this.loaded = true;
+ 	
 
   }//end of ngInit()
 
@@ -41,7 +49,6 @@ export class UsersComponent implements OnInit {
   		value.hide = true;
 
   		this.dataService.addUser(value);
-  		// this.users.unshift(value);
 
   		this.form.reset();
   	}

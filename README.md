@@ -32,6 +32,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 * Chrome extension: <i><strong> Augury</strong></i> <br> 
 -(For debugging and visualizing angular applications at runtime) <br>
 * Image placeholders: [www.lorempixel.com](https://www.lorempixel.com)<br>
+* JSON placeholder: [https://jsonplaceholder.typicode.com/](https://jsonplaceholder.typicode.com/)<br>
+-(free online REST service that you can use whenever you need some fake data, you can GET, POST, PUT, PATCH, DELETE)<br>
 
 
 ## Additional Dependencies added

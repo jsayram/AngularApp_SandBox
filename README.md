@@ -3,7 +3,7 @@
 ---
 ## Jose Ramirez Dev. Notes
 ---
-Mostly a reference application for setting up enviroment to how to use services, Forms & Events with various validations, HTTP module, how to use Angluar Router etc... also How to post, get, update ,and delete to an API using Angular 5.<br>
+Mostly a reference application for how to use services, Forms & Events with various validations, HTTP module, how to use Angluar Router etc... also How to post, get, update ,and delete to an API using Angular 5.<br>
 
 #### Tools & Assets:
 
